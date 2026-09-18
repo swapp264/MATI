@@ -1,0 +1,6 @@
+{
+  "name": "MAATI — Indian Kitchen & Coffee",
+  "description": "MAATI is a contemporary Indian kitchen and café in Vashi, Navi Mumbai, serving regional flavours, coffee and warm hospitality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

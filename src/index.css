@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #9f3c16;
+  --color-primary-container: #bf542c;
+  --color-primary-fixed: #ffdbcf;
+  --color-primary-fixed-dim: #ffb59c;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #fffbff;
+  --color-secondary: #735c00;
+  --color-secondary-fixed: #ffe088;
+  --color-secondary-container: #fed65b;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #745c00;
+  --color-tertiary: #526048;
+  --color-tertiary-container: #6a795f;
+  --color-tertiary-fixed: #d7e8c9;
+  --color-on-tertiary: #ffffff;
+  --color-surface: #fff8f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f9f2ee;
+  --color-surface-container: #f3ede9;
+  --color-surface-container-high: #ede7e3;
+  --color-surface-container-highest: #e7e1de;
+  --color-on-surface: #1d1b19;
+  --color-on-surface-variant: #57423b;
+  --color-outline: #8a726a;
+  --color-outline-variant: #dec0b7;
+  --color-inverse-surface: #32302e;
+  --color-inverse-on-surface: #f6efec;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-headline: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Custom scrollbar hiding helper */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
